@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦВТ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <script src="file.js"></script>
+</head>
+
+<body class="body">
+    
+    <header class="header container">
+        <div class="header__logo">
+            <img  src="img/logo.svg" alt="logo">
+            <p>
+                Видеосервис
+            </p>
+        </div>
+        <form class="header__search">
+            <input type="text" placeholder="Поиск...">
+            <button type="submit">Найти</button>
+        </form>
+        <button class="header__button" type="button">Войти</button>
+        
+    </header>
+   
+    <nav class="navigation">
+        <ul class="navigation__item">
+            <li><a href="index.html"> Фильмы</a></li>
+            <li><a href="channels.html">Телеканалы</a></li>
+        </ul>
+    </nav>
+    <main class="main container">
+        <div class="modal">
+            <div class="modal__window">
+                <form class="modal__form">
+                    <h1>Вход</h1>
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                    
+                    <label ><input type="checkbox">Запомнить</label>
+                    <button type="button">Войти</button>
+                </form>
+            </div>
+        </div>
+        <section class="movie">
+            <h2>&#128293; Новинки</h2>
+            <div class="movie__content">
+                <ul class="movie__item">
+                    <li class="movie__list ">
+                        <a href="#"><img src="img/кот.jpg" alt="movie" ></a>
+                        <p class="fade">
+                            <span>В новом выпуске ми-ми-мишки изобретут машину сна, а Дракоша Тоша научит завязывать шнурки. Также зрители увидят новые серии мультфильмов «Четверо в кубе», «Лео и Тиг» и совершенно новый мультсериал «Снежная королева: Хранители чудес»...
+                            </span>
+                        </p>
+                        <p>
+                            Мульт в кино. Выпуск №103. Некогда грустить!
+                        </p>
+                    </li>
+                    <li class="movie__list">
+                        <a href="#"><img src="img/бэтмен.jpg" alt="movie" ></a>
+                        <p class="fade">
+                            <span>
+                                После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира, где он встречает Женщину-Кошку, Пингвина, Кармайна Фальконе и Загадочника...
+                            </span>
+                        </p>
+                        <p>Новый Бэтмен</p>
+                    </li>
+                    <li class="movie__list ">
+                        <a href="#"><img src="img/голливуд.jpg" alt="movie" >
+                        </a>
+                        <p class="fade">
+                            <span>
+                                Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии...
+                            </span>
+                        </p>
+                        <p>
+                            Однажды... в Голливуде
+                        </p>                        
+                    </li>
+                    <li class="movie__list">
+                        <a href="#"><img src="img/девушка.jpg" alt="movie"></a>
+                        <p class="fade">
+                            <span>
+                                Они – яркие, сексуальные и очень амбициозные. Они – танцовщицы элитного стриптиз-клуба, клиенты которого – известные финансисты с Уолл-Стрит. Но когда банковский кризис в одночасье превращает накопления девушек в пыль, подруги по несчастью жаждут отомстить. Они разрабатывают дерзкий план как вернуть потерянные деньги...
+                            </span>
+                        </p>
+                        <p>
+                            Стриптизёрши
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="genres">
+            <h2>Жанры</h2>
+            <div class="genres__content">
+                <ul class="genres__item">
+                    <li><a href="#"><img src="img/comedy.jpg" alt="comedy"></a></li>
+                    <li><a href="#"><img src="img/drama.jpg" alt="drama"></a></li>
+                    <li><a href="#"><img src="img/fantastic.jpg" alt="fantastic"></a></li>
+                    <li><a href="#"><img src="img/horrors.jpg" alt="horrors"></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content container">
+            <img src="img/archer.svg" alt="archer" class="footer__img">
+                <div class="footer__information">
+                <p>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                <p>+7 (3412) 93-88-61, 43-29-29</p>
+                <a href="https://htc-cs.ru/">htc-cs.ru</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

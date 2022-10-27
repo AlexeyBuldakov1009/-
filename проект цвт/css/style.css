@@ -1,0 +1,406 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 1144px;
+    background-color: #FFFFFF;
+    margin: auto;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1180px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+   
+    height: 40px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 11px;
+}
+
+.header__search{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-bottom: 1px solid #333333;
+}
+
+.header__search input:focus{
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Rubik';
+    font-style: normal;
+   
+}
+
+.header__search input, button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.header__search input{
+    width: 100%;
+    height: 42px; 
+    color: #828282;  
+}
+
+.header__search button{
+    height: 50px;
+    width: 19px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    cursor: pointer;
+    color: #E5261E;
+}
+
+.header__button{
+    width:113px;
+    height: 38px;
+    background: #E5261E;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.header__button:hover{
+    background: #CC221B;
+}
+
+.navigation__item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.modal{
+
+    position:fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.2s;
+}
+
+.is-open{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal__window{
+    width: 305px;
+    height: 395px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.modal__form{
+    margin: 36px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.modal__form h1{
+    margin: 0 auto;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 24px;
+}
+
+.modal__form input{
+    border: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin-bottom: 24px;
+}
+
+.modal__form label input{
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.modal__form button{
+    background: #E5261E;
+    border-radius: 4px;
+    width: 113px;
+    height: 38px;
+    align-self: center;
+    margin-top: 110px;
+
+}
+
+.navigation__item a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-decoration: none;
+    color: #333333;
+    margin-left: 24px;
+    }
+
+.navigation__item a:hover{
+    color: #E5261E;
+    border-bottom: #E5261E;
+    border-width: 0 0 3px;
+    border-style: solid;
+}    
+
+.main{
+    flex-grow: 1;
+    }
+
+.main__container{
+    margin-top: 32px;
+}    
+
+.movie{
+    width: 1180px;
+    height: 478px;
+}
+
+.movie h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.movie__content{
+    margin-top: 16px;
+}
+
+.movie__item{
+    display: flex;
+    justify-content:space-between;
+    z-index: 0;
+}
+
+.movie__list{
+    position: relative;
+    width: 280px;
+    height: 370px;
+    display: inline-block;
+}
+
+.movie__list img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.fade{
+    display: none;
+    position: absolute; 
+    bottom: 0;
+    background: #333333;
+    opacity: 0.8;
+    border-radius: 8px;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.movie__list:hover .fade{
+    display: block;
+}
+
+
+.movie__list p{
+    width: 280px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.movie__list span{
+    display: block;
+    padding: 16px 16px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F2F2F2;
+}
+
+.genres{
+    margin-top: 30px;
+    margin-bottom: 72px;
+    height: 252px;
+    
+}
+
+.genres h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    
+}
+
+.genres__item{
+    display: flex;
+    justify-content:space-between;
+}
+
+.genres__item img{
+    opacity: 0.8;
+}
+
+.genres__item img:hover{
+    opacity: 1;
+}
+
+.footer{
+    background: #F2F2F2;
+   
+    height: 120px;
+}
+
+.footer__content{
+    display: flex;
+}
+
+.footer__img{
+    margin-top: 28px;
+}
+
+.footer__information{
+    margin-left: 40px;
+    margin-top: 27px;
+}
+
+.footer p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 6px;
+}
+
+.footer a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.channals{
+    height:696px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.channals::-webkit-scrollbar{
+    width: 8px;
+}
+
+.channals::-webkit-scrollbar-thumb{
+    background-color: #bdbdbd;
+    border-radius:2px ;
+    border: 2px solid #F2F2F2;
+}
+
+.channals::-webkit-scrollbar-track{
+    background-color: #f2f2f2;
+    border-radius: 2px;
+}
+
+
+.channals__list{
+    display: flex;
+    width: 1160px;
+    height: 162px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.channals__programs p:last-of-type{
+    margin-top: 12px;
+    margin-bottom: 19px;
+}
+
+.channals__programs p:nth-of-type(2n){
+    margin-top: 12px;
+}
+
+.channals__img{
+    width: 115px;
+    height: 65px;
+    margin-left: 175px;
+    margin-right: 143px;
+    margin-top: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.channals__list h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 21px;
+    margin-bottom: 17px;
+}
+
+.channals__programs{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.channals__programs-now{
+    color: #E5261E;
+}
+
+@media(wid){
+
+}
